@@ -57,8 +57,14 @@ sudo pm2 startup -u "$USER" --hp "$HOME"
 ### Automatic monthly archive
 To archive any old CSV generated each first day of month at 18:00 am local time, run after exporting the config:
 ```sh
-pm2 start scripts/archive.sh --cron "0 18 1 * *"
+pm2 start scripts/archive.sh -c "0 0 18 1 * *"
 ```
+
+Or run `crontab -e` and add:
+```
+0 18 1 * * PATH_TO_PROJECT/scripts/archive.sh
+```
+Remember to setup the crontab to load your environment variables correctly before running the script.
 
 ### Update configuration
 After exporting the new config:
