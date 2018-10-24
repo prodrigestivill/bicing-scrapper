@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "start": "node lib/once.js",
+    "dump": "node lib/dump.js",
     "cron": "node lib/index.js",
     "migrate": "sequelize db:migrate",
     "migrate:undo": "sequelize db:migrate:undo"
