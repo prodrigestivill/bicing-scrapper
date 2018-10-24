@@ -4,9 +4,9 @@
   "description": "Data scrapping of the Bicing API",
   "main": "lib/index.js",
   "scripts": {
-    "start": "node lib/once.js",
+    "once": "node lib/once.js",
     "dump": "node lib/dump.js",
-    "cron": "node lib/index.js",
+    "start": "node lib/index.js",
     "migrate": "sequelize db:migrate",
     "migrate:undo": "sequelize db:migrate:undo"
   },
@@ -33,6 +33,7 @@
     "sqlite3": "^4.0.3"
   },
   "optionalDependencies": {
+    "mysql2": "^1.6.1",
     "pg": "^7.5.0",
     "pg-hstore": "^2.3.2"
   },
