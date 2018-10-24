@@ -1,0 +1,24 @@
+{
+    "extends": "standard",
+    "env": {
+      "node": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "sourceType": "script",
+        "ecmaFeatures": {
+            "impliedStrict": true
+        }
+    },
+    "rules": {
+      "camelcase": 0,
+      "comma-dangle": [2, "never"],
+      "no-return-await": 0,
+      "no-multi-assign": 0,
+      "space-before-function-paren": [2, {"named": "never", "anonymous": "always", "asyncArrow": "always"}],
+      "semi": [2, "always"]
+    },
+    "globals": {
+      "rootRequire": true
+    }
+}

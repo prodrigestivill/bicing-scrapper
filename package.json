@@ -1,0 +1,46 @@
+{
+  "name": "bicing-scrapper",
+  "version": "1.0.0",
+  "description": "Data scrapping of the Bicing API",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "node lib/once.js",
+    "cron": "node lib/index.js",
+    "migrate": "sequelize db:migrate",
+    "migrate:undo": "sequelize db:migrate:undo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dacfortuny/bicing.git"
+  },
+  "keywords": [
+    "scrapper"
+  ],
+  "author": "Pau Rodriguez & Didac Fortuny",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/dacfortuny/bicing/issues"
+  },
+  "homepage": "https://github.com/dacfortuny/bicing#readme",
+  "dependencies": {
+    "csv-stringify": "^4.3.1",
+    "debug": "^4.1.0",
+    "node-fetch": "^2.2.0",
+    "sequelize": "^4.41.0",
+    "sequelize-cli": "^5.2.0",
+    "sequelize-import": "^1.2.1",
+    "sqlite3": "^4.0.3"
+  },
+  "optionalDependencies": {
+    "pg": "^7.5.0",
+    "pg-hstore": "^2.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  }
+}
