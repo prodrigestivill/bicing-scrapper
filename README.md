@@ -7,12 +7,19 @@ Supports to save data in:
 
 The configuration works using environment variables.
 
+## Prepare
 Install dependencies, create database and run once:
 ```sh
 npm install
 npm run migrate
 npm run once
 ```
+
+Run foreground:
+```sh
+npm start
+```
+
 ## Configuration parameters
  * `OUTPUT_PATH`: Output path for dumping database.
  * `UPDATE_INTERVAL`: Interval in ms to run the cron job.
@@ -42,7 +49,7 @@ pm2 save
 sudo pm2 startup -u "$USER" --hp "$HOME"
 ```
 
-## Update Configuration
+### Update configuration
 After exporting the new config:
 ```sh
 pm2 startOrRestart ecosystem.config.js --update-env
