@@ -54,9 +54,17 @@ pm2 save
 sudo pm2 startup -u "$USER" --hp "$HOME"
 ```
 
+### Automatic monthly archive
+To archive any old CSV generated each first day of month at 18:00 am local time, run after exporting the config:
+```sh
+pm2 start scripts/archive.sh --cron "0 18 1 * *"
+```
+
 ### Update configuration
 After exporting the new config:
 ```sh
 pm2 startOrRestart ecosystem.config.js --update-env
 pm2 save
 ```
+
+Keep in mind to also `update-env` for `scripts/archive.sh` if it has been added.
