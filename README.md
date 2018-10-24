@@ -40,10 +40,15 @@ export DUMP_EXTRA="always"
 export DATABASE_URL="mysql://user:pass@example.com:9821/db_name"
 ```
 
+## Dump all data
+```sh
+npm run dump
+```
+
 ## Setup to start on boot
 
 ```sh
-npm install -g pm2
+sudo npm install -g pm2
 pm2 start ecosystem.config.js
 pm2 save
 sudo pm2 startup -u "$USER" --hp "$HOME"
