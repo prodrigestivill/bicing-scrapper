@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dacfortuny/bicing.git"
+    "url": "git+https://github.com/prodrigestivill/bicing-scrapper.git"
   },
   "keywords": [
     "scrapper"
@@ -20,9 +20,9 @@
   "author": "Pau Rodriguez & Didac Fortuny",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/dacfortuny/bicing/issues"
+    "url": "https://github.com/prodrigestivill/bicing-scrapper/issues"
   },
-  "homepage": "https://github.com/dacfortuny/bicing#readme",
+  "homepage": "https://github.com/prodrigestivill/bicing-scrapper",
   "dependencies": {
     "csv-stringify": "^4.3.1",
     "debug": "^4.1.1",
