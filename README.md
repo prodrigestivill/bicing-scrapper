@@ -7,6 +7,8 @@ Supports to save data in:
 
 The configuration works using environment variables.
 
+There is a [sister project](https://github.com/dacfortuny/bicing) developed in Jupyter Notebook.
+
 ## Prepare
 Install dependencies, create database and run once:
 ```sh
