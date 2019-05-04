@@ -22,7 +22,8 @@ npm start
 
 ## Configuration parameters
  * `OUTPUT_PATH`: Output path for dumping database.
- * `UPDATE_INTERVAL`: Interval in ms to run the cron job.
+ * `UPDATE_INTERVAL`: Interval in ms to update stations data.
+ * `UPDATE_STATIONS_INTERVAL`: Interval in ms to update the station information.
  * `AGENT_KEEPALIVE`: Time to keep connection alive to the servers.
  * `SAVE_DATA_AS`: save data into the database or as a CSV file.
  * `DUMP_EXTRA`: if `always` dumps all data every time the cron job finishes.
@@ -33,7 +34,8 @@ It's important to define it before executing `npm run migrate` in order to popul
 ### Configuration example
 ```sh
 export OUTPUT_PATH="/tmp/bicing/"
-export UPDATE_INTERVAL="40000" #ms
+export UPDATE_INTERVAL="10000" #ms
+export UPDATE_INTERVAL="300000" #ms
 export AGENT_KEEPALIVE="120000" #ms
 export SAVE_DATA_AS="csv"
 export DUMP_EXTRA="always"
