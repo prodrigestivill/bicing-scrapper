@@ -36,8 +36,8 @@ It's important to define it before executing `npm run migrate` in order to popul
 ### Configuration example
 ```sh
 export OUTPUT_PATH="/tmp/bicing/"
-export UPDATE_INTERVAL="10000" #ms
-export UPDATE_STATIONS_EACH="360" #times UPDATE_INTERVAL
+export UPDATE_INTERVAL="60000" #ms
+export UPDATE_STATIONS_EACH="60" #times UPDATE_INTERVAL
 export AGENT_KEEPALIVE="120000" #ms
 export SAVE_DATA_AS="csv"
 export DUMP_EXTRA="always"
