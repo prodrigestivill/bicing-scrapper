@@ -26,23 +26,23 @@
   "dependencies": {
     "csv-stringify": "^4.3.1",
     "debug": "^4.1.1",
-    "mkdirp": "^0.5.1",
+    "mkdirp": "^0.5.3",
     "node-fetch": "^2.6.0",
-    "sequelize": "^5.21.2",
+    "sequelize": "^5.21.5",
     "sequelize-cli": "^5.5.1",
     "sequelize-import": "^1.2.1",
-    "sqlite3": "^4.1.0"
+    "sqlite3": "^4.1.1"
   },
   "optionalDependencies": {
-    "mysql2": "^2.0.0",
-    "pg": "^7.12.1",
+    "mysql2": "^2.1.0",
+    "pg": "^7.18.2",
     "pg-hstore": "^2.3.3"
   },
   "devDependencies": {
-    "eslint": "^6.6.0",
+    "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1"
   }
